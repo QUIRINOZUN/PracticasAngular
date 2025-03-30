@@ -113,6 +113,7 @@ footer {
     margin-top: 20px;
 }
 </style>
+
 <body>
     <header>
         <h1>QUIRINEWS</h1>
@@ -131,12 +132,12 @@ footer {
     <main>
         <section class="news-container">
             <!-- Noticia 1 -->
-            <article class="news-card">
-                <img src="https://via.placeholder.com/400x200" alt="Imagen de la noticia 1" class="news-image">
+            <article *ngFor="let article of articles.articles" nclass="news-card">
+                <img src={{ article.urlToImage }} alt="Imagen de la noticia 1" class="news-image">
                 <div class="news-content">
-                    <h2 class="news-title">Título :</h2>
-                    <p class="news-date">Fecha: </p>
-                    <p class="news-description">Descripción: </p>
+                    <h2 class="news-title">Titulo: <span>{{ article.title }}</span></h2>
+                    
+                    <p class="news-description">Descripción: <span>{{article.description}}</span></p>
                     <a href="#noticia1" class="news-button">url: </a>
                 </div>
             </article>

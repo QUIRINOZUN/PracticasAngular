@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ArticleResult } from '../../interfaces/newsint';
+import { Component, OnInit } from '@angular/core';  
 import { QuirinewsService } from '../../services/newsser.service';
+import { ArticleResult } from '../../interfaces/newsint';
 
 @Component({
   selector: 'app-news',
@@ -9,6 +9,7 @@ import { QuirinewsService } from '../../services/newsser.service';
   styleUrl: './news.component.css'
 })
 export class NewsComponent implements OnInit{
+[x: string]: any;
   articles!: ArticleResult;
   constructor (private service: QuirinewsService) {}
   cat:string = 'technology';

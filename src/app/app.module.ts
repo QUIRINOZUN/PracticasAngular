@@ -28,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     ClimaComponent,
     HeaderComponent,
     NavbarComponent,
+    AboutComponent,
     ProjectsComponent,
     SignupComponent,
     ContactComponent,

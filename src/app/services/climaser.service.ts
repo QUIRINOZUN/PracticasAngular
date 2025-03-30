@@ -9,9 +9,10 @@ import { ClimaResult } from '../interfaces/climaint';
 export class ApiClima {
   constructor(private http: HttpClient) { }// Inject HttpClient
   getData(location: string){
-    return this.http.get<ClimaResult>('https://api.weatherstack.com/current?access_key=ff3dbbd040c06028f2fd35ee986d5fdc&query=${location}')// Get data from API
+    return this.http.get<ClimaResult>(`https://api.weatherstack.com/current?access_key=ca139a381aed62f08bf31d67cfeea5e3&query=${location}`);// Get data from API
   }
 
+  
 
 
 

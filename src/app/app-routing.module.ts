@@ -16,10 +16,11 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'aboutme', component: AboutmeComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home'},
-  { path: '**', component: NotfoundComponent },
+  
   { path: 'acerca2', component: Acerca2Component },
   { path: 'clima', component: ClimaComponent },
   { path: 'news', component: NewsComponent },
+  { path: '**', component: NotfoundComponent },
   // { path: 'path', component: NameComponent },
   // enrutar cada componente 
   
